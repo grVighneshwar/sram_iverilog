@@ -123,7 +123,7 @@ endmodule
 - to run the simulation
 ```
 iverilog -o sram sram.v sram_tb.v
-vvp sram_sim
+vvp sram
 ```
 - Analyze the Simulation Results with GTKWave:
 
