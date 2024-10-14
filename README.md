@@ -54,11 +54,15 @@ Comprehensive analysis of simulation outputs, highlighting the SRAM's performanc
  ```
   module sram #( parameter DATA_WIDTH = 8, parameter ADDR_WIDTH = 4 )( input wire clk, input wire [ADDR_WIDTH-1:0] address, input wire [DATA_WIDTH-1:0] data_in,  input wire write_enable, output reg [DATA_WIDTH-1:0] data_out );
     reg [DATA_WIDTH-1:0] memory [0:2**ADDR_WIDTH-1];
-    always @(posedge clk) begin
-        if (write_enable) begin
+    always @(posedge clk)
+    begin
+        if (write_enable)
+        begin
             // Write operation
             memory[address] <= data_in;
-        end else begin
+        end
+        else
+        begin
             // Read operation
             data_out <= memory[address];
         end
