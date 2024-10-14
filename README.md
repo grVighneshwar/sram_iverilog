@@ -132,6 +132,6 @@ vvp sram_sim
 - Launch GTKWave to view the waveforms:
 
 ```
-gtkwave sram_sim.vcd
+gtkwave sram_wave.vcd
 ```
 Use GTKWave to analyze the waveforms and verify the performance and correctness of the SRAM design.
